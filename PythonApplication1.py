@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import speech_recognition as sr
+import os
 
 
 punkty = []
@@ -64,7 +65,8 @@ if txt=="start":
         else:
             print("nie udalo sie pobrac nazwy zdjecia")  
             continue
-    nazwazdjecia="D:/pobrane/studia/zdjeciawma/"+txt+".jpg"
+    nazwa_pliku = txt + ".jpg"  
+    nazwazdjecia = os.path.join("photos", nazwa_pliku)
     image = cv2.imread(nazwazdjecia)
     if image is None:
         print("nie pobrano zdjecia, zresetuj program")
