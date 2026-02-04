@@ -3,7 +3,7 @@
 
 An interactive computer vision system developed in Python that detects and classifies playing card suits (Hearts, Diamonds, Spades, Clubs) using real-time image processing and voice commands.
 
-## 🌟 Key Features
+## Key Features
 * **Voice-Activated Interface**: Using the Google Speech Recognition API. Start the process, stop the program, or specify image filenames using Polish voice commands.
 * **Perspective Correction**: Includes a manual tool to select card corners and perform a 4-point perspective transform, "flattening" the card for accurate analysis.
 * **HSV Color Segmentation**: Advanced color filtering for both red (Hearts/Diamonds) and black (Spades/Clubs) suits, optimized for varying lighting conditions.
